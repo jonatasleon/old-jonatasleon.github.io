@@ -1,0 +1,64 @@
+body {
+  color: #333;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+header {
+  position: relative;
+  background: url(../img/header-background.png) repeat;
+  color: #ffffff;
+}
+
+#itsme {
+  width: 150px;
+	height: 150px;
+  margin: 16px 8px;
+
+	border-radius: 75px;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#say-my-name {
+  position: absolute;
+  left: 174px;
+  top: 41px;
+}
+
+#say-my-name h1 {
+  font-size: 45px;
+}
+
+#say-my-name h2 {
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+#say-my-name h3 {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.social-menu {
+  position: absolute;
+  bottom: 16px;
+  right: 8px;
+}
+
+.social-menu ul {
+  font-size: 15px;
+}
+
+.social-menu ul li {
+  display: inline;
+  margin-left: 0rpx
+}
