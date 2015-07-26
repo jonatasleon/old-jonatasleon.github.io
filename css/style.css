@@ -9,9 +9,12 @@ body {
 }
 
 header {
-  position: relative;
   background: url(../img/header-background.png) repeat;
   color: #ffffff;
+}
+
+header div {
+  position: relative;
 }
 
 #itsme {
@@ -43,8 +46,8 @@ header {
   font-size: 24px;
 }
 
-#say-my-name h3 {
-  margin-top: 16px;
+#say-my-name p {
+  margin-top: 8px;
   font-size: 18px;
 }
 
@@ -61,4 +64,27 @@ header {
 .social-menu ul li {
   display: inline;
   margin-left: 0rpx
+}
+
+.description {
+  position: relative;
+  margin: 16px auto;
+}
+
+.description h2 {
+  width: 150px;
+  font-size: 24px;
+  margin: 16px 8px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.description p {
+  position: absolute;
+  top: 0;
+  left: 166px;
+  text-indent: 30px;
+  text-align: justify;
+  margin: 0 8px;
+  border-bottom: 2px solid #B6B6B6;
 }
