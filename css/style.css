@@ -77,7 +77,12 @@ header div {
 article section {
   padding: 16px auto;
   margin: 16px auto;
-  /*border-bottom: 2px solid #B6B6B6;*/
+  clear: both;
+  border-bottom: 2px solid #B6B6B6;
+}
+
+article section:first-child {
+  border: 0px;
 }
 
 .block {
