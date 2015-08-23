@@ -31,12 +31,20 @@ header div {
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-
+  
   /*filtro*/
   /*suporte Chrome, Safari, Android, Opera*/
   -webkit-filter: grayscale(25%);
   /*suporte para Firefox*/
   filter: grayscale(25%);
+}
+
+#itsme:hover {
+  /*filtro*/
+  /*suporte Chrome, Safari, Android, Opera*/
+  -webkit-filter: grayscale(13%);
+  /*suporte para Firefox*/
+  filter: grayscale(13%);
 }
 
 #say-my-name {
