@@ -1,4 +1,4 @@
-Jonatas Resumé
+Jonatas Resume
 ===
 
 Under construction
