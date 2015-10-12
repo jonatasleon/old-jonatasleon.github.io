@@ -64,11 +64,11 @@ header div {
 .talk-me {
     margin: 4px 0;
 }
-.talk-me a, .link a {
+a {
     text-decoration: none;
     color: #fff;
 }
-.talk-me a:hover, .link a {
+a:hover {
     color: #B3BEC7;
 }
 .talk-me a:visited, .link a:visited {
