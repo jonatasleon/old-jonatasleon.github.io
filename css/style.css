@@ -64,12 +64,15 @@ header div {
 .talk-me {
     margin: 4px 0;
 }
-.talk-me a {
+.talk-me a, .link a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
-.talk-me a:hover {
+.talk-me a:hover, .link a {
     color: #B3BEC7;
+}
+.talk-me a:visited, .link a:visited {
+    color: #eee;
 }
 .social-menu {
     position: absolute;
@@ -92,8 +95,28 @@ article section {
     clear: both;
     border-bottom: 2px solid #B6B6B6;
 }
-article section:first-child {
+article section:first-child, article section:last-child {
     border: 0px;
+}
+.link {
+    -webkit-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+
+    background-color: #607D8B;
+    text-align: center;
+
+    clear: both;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+}
+.link a {
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
 }
 .block {
     position: relative;
