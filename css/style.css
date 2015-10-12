@@ -83,7 +83,7 @@ header div {
 
 .social-menu ul li {
   display: inline;
-  margin-left: 0rpx
+  margin-left: 0px;
 }
 
 article {
@@ -91,7 +91,7 @@ article {
 }
 
 article section {
-  padding: 16px auto;
+  padding: 16px 3px;
   margin: 16px auto;
   clear: both;
   border-bottom: 2px solid #B6B6B6;
@@ -147,6 +147,26 @@ article section:first-child {
 .description {
   margin: 8px 0;
   text-indent: 30px;
+}
+
+#message-form {
+    width: 300px;
+    margin: 10px auto;
+}
+#message-form textarea{
+    resize: vertical;
+}
+#message-form input[type=text], #message-form textarea {
+    width: 290px;
+    margin: 4px auto 0;
+    display: block;
+}
+#message-form h3 {
+    font-size: 3.9em;
+    margin: 15px 0;
+}
+.input-label {
+    font-size: 1.2em;
 }
 
 footer {
