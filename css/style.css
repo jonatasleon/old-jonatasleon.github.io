@@ -5,7 +5,7 @@ body > #wrapper {
     height: auto;
     min-height: 100%;
 }
-body {
+body, textarea {
     color: #333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -61,6 +61,16 @@ header div {
     margin-top: 8px;
     font-size: 18px;
 }
+.talk-me {
+    margin: 4px 0;
+}
+.talk-me a {
+    text-decoration: none;
+    color: inherit;
+}
+.talk-me a:hover {
+    color: #B3BEC7;
+}
 .social-menu {
     position: absolute;
     bottom: 16px;
@@ -87,7 +97,7 @@ article section:first-child {
 }
 .block {
     position: relative;
-    margin: 0 8px;
+    margin: 0 4px;
     text-align: justify;
 }
 .block h2 {
@@ -106,7 +116,7 @@ article section:first-child {
     clear: right;
 }
 .content {
-    margin: 16px 8px;
+    margin: 16px 4px;
     width: 758px;
     float: right;
 }
@@ -126,23 +136,33 @@ article section:first-child {
     text-indent: 30px;
 }
 #message-form {
-    width: 300px;
+    width: 450px;
     margin: 10px auto;
+    /*font-size: 3em;*/
 }
 #message-form textarea {
     resize: vertical;
+    min-height: 200px;
 }
 #message-form input[type=text], #message-form textarea {
-    width: 290px;
+    width: 450px;
     margin: 4px auto 0;
     display: block;
 }
-#message-form h3 {
-    font-size: 3.9em;
-    margin: 15px 0;
-}
-.input-label {
+#message-form input[type=text], #message-form textarea, #message-form button {
     font-size: 1.2em;
+}
+#message-form h3 {
+    font-size: 3.5em !important;
+    margin: 15px 0;
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 10px;
+    background-color: #607D8B;
+    color: #fff;
 }
 footer {
     clear: both;
