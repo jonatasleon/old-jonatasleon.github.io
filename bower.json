@@ -16,7 +16,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "devicon": "*"
-  }
+  "dependencies": {}
 }

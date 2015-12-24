@@ -21,7 +21,7 @@ body {
     width: 1020px;
     margin: 0 auto;
     @media screen and (max-width: 400px) {
-        width: 350px;
+        width: 300px;
     }
 }
 
@@ -58,6 +58,24 @@ nav {
     padding: $padding;
 }
 
+@mixin btn-shadow($color) {
+    background-color: $color;
+    box-shadow: 3px -3px 5px rgba($color, .2);
+}
+.btn {
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn-primary {
+    @include btn-shadow($accent-color);
+}
+
+.btn-trans {
+    background-color: transparent;
+}
+
 .container-box {
     min-height: 100vh;
     max-height: 100vh;
@@ -90,7 +108,7 @@ nav {
             text-align: center;
         }
         @media screen and (max-width: 400px) {
-            background-color: rgba($primary-color-light,.0);
+            background-color: transparent;
             width: 100vw;
             margin-top: 0px;
             img {
@@ -104,9 +122,16 @@ nav {
             }
         }
     }
+    #next-page {
+        width: 75px;
+        margin: 0 auto;
+    }
 }
 
 article {
     background-color: #FFF;
     color: $primary-text-color;
+    #main {
+        height: 1000px;
+    }
 }

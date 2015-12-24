@@ -8,7 +8,7 @@ body {
   margin: 0 auto; }
   @media screen and (max-width: 400px) {
     .container {
-      width: 350px; } }
+      width: 300px; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
@@ -38,6 +38,18 @@ p .inverted {
 nav {
   padding: 1em; }
 
+.btn {
+  height: 40px;
+  border-radius: 20px;
+  border: 0; }
+
+.btn-primary {
+  background-color: #FF5722;
+  box-shadow: 3px -3px 5px rgba(255, 87, 34, 0.2); }
+
+.btn-trans {
+  background-color: transparent; }
+
 .container-box {
   min-height: 100vh;
   max-height: 100vh;
@@ -66,7 +78,7 @@ nav {
       text-align: center; }
     @media screen and (max-width: 400px) {
       .container-box .content-box {
-        background-color: rgba(197, 202, 233, 0);
+        background-color: transparent;
         width: 100vw;
         margin-top: 0px; }
         .container-box .content-box img {
@@ -74,7 +86,12 @@ nav {
         .container-box .content-box figure figcaption h1 {
           font-size: 4.5em;
           line-height: 90%; } }
+  .container-box #next-page {
+    width: 75px;
+    margin: 0 auto; }
 
 article {
   background-color: #FFF;
   color: #212121; }
+  article #main {
+    height: 1000px; }
