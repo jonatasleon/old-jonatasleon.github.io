@@ -8,7 +8,7 @@ body {
   margin: 0 auto; }
   @media screen and (max-width: 400px) {
     .container {
-      width: 380px; } }
+      width: 350px; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
@@ -64,11 +64,17 @@ nav {
       font-size: 6em; }
     .container-box .content-box h2 {
       text-align: center; }
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 400px) {
       .container-box .content-box {
         background-color: rgba(197, 202, 233, 0);
-        width: 100vw; }
+        width: 100vw;
+        margin-top: 0px; }
         .container-box .content-box img {
           width: 135px; }
         .container-box .content-box figure figcaption h1 {
-          font-size: 4.5em; } }
+          font-size: 4.5em;
+          line-height: 90%; } }
+
+article {
+  background-color: #FFF;
+  color: #212121; }

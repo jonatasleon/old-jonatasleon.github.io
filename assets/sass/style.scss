@@ -21,7 +21,7 @@ body {
     width: 1020px;
     margin: 0 auto;
     @media screen and (max-width: 400px) {
-        width: 380px;
+        width: 350px;
     }
 }
 
@@ -89,17 +89,24 @@ nav {
         h2 {
             text-align: center;
         }
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 400px) {
             background-color: rgba($primary-color-light,.0);
             width: 100vw;
+            margin-top: 0px;
             img {
                 width: 135px;
             }
             figure {
                 figcaption h1 {
                     font-size: 4.5em;
+                    line-height: 90%;
                 }
             }
         }
     }
+}
+
+article {
+    background-color: #FFF;
+    color: $primary-text-color;
 }
