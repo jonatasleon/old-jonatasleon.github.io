@@ -1,0 +1,26 @@
+{
+  "name": "jonatasleon.github.io",
+  "version": "0.0.0",
+  "description": "Jonatas Resume ===",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonatasleon/jonatasleon.github.io.git"
+  },
+  "author": "Jonatas Leon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonatasleon/jonatasleon.github.io/issues"
+  },
+  "devDependencies": {
+    "gulp-sass": "~2.1.1",
+    "gulp": "~3.9.0",
+    "gulp-imagemin": "~2.4.0"
+  },
+  "dependencies": {
+    "imagemin-pngquant": "~4.2.0"
+  }
+}
