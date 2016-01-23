@@ -81,8 +81,10 @@ nav {
     max-height: 100vh;
     background-image: url("../img/dest/background.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-color: rgba($primary-color-dark, .85);
     background-blend-mode: multiply;
+    align-content: center;
     .content-box {
         border-radius: 1em;
         background-color: rgba($primary-color-light,.05);
