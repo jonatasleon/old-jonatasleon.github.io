@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jonatas</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="./assets/css/style.css" media="screen" charset="utf-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" charset="utf-8"></script>
-    <script src="./assets/js/script.js" charset="utf-8"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jonatas</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./lib/flexboxgrid/dist/flexboxgrid.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/ngstyle.css">
+        <script src="./lib/firebase/firebase.js"></script>
+        <script src="./lib/angular/angular.js"></script>
+        <script src="./lib/angular-route/angular-route.js"></script>
+        <script src="./lib/angular-animate/angular-animate.js"></script>
+        <script src="./lib/angularfire/dist/angularfire.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/controllers/aboutCtrl.js"></script>
+        <script src="./js/services/firebaseRefService.js"></script>
+        <script src="./js/value/configValue.js"></script>
+    </head>
 
-<body>
-    <header class="container-box">
-        <nav></nav>
-        <div class="content-box">
-            <figure>
-                <img src="./assets/img/dest/itsme.png" alt="Pic's Jonatas Leon" title="Pic's Jonatas Leon">
-                <figcaption>
-                    <h1>Jonatas Leon</h1>
-                </figcaption>
-            </figure>
-            <h2>Desenvolvedor Android</h2>
-        </div>
-        <button type="button" id="next-page" class="btn btn-trans">Here</button>
-    </header>
-    <article id="main">
+    <body>
         <div class="container">
-            <section>
-                sd
-            </section>
+            <ng-include src="'./view/navbar.html'"></ng-include>
+            <ng-view></ng-view>
+            <h1>Jonatas Leon</h1>
         </div>
-    </article>
-</body>
+    </body>
 
 </html>

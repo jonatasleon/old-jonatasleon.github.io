@@ -17,11 +17,9 @@
     "url": "https://github.com/jonatasleon/jonatasleon.github.io/issues"
   },
   "devDependencies": {
-    "gulp-sass": "~2.1.1",
     "gulp": "~3.9.0",
-    "gulp-imagemin": "~2.4.0"
-  },
-  "dependencies": {
-    "imagemin-pngquant": "~4.2.0"
+    "gulp-imagemin": "~2.4.0",
+    "imagemin-pngquant": "~4.2.0",
+    "live-server": "^0.9.1"
   }
 }
