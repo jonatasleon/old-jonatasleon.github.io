@@ -1,8 +1,8 @@
 "use strict";
 
 var gulp = require("gulp"),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant');
+    imagemin = require("gulp-imagemin"),
+    pngquant = require("imagemin-pngquant");
 
 gulp.task("imgmin", function() {
     gulp.src("./img/src/**/*")
