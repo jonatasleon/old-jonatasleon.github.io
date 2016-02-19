@@ -20,6 +20,7 @@
     "gulp": "~3.9.0",
     "gulp-imagemin": "~2.4.0",
     "imagemin-pngquant": "~4.2.0",
-    "live-server": "^0.9.1"
+    "live-server": "^0.9.1",
+    "run-sequence": "^1.1.5"
   }
 }
