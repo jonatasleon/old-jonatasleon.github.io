@@ -1,4 +1,4 @@
 Jonatas Resume
 ===
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jonatasleon/jonatasleon.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](https://travis-ci.org/jonatasleon/jonatasleon.github.io.svg?branch=dev)](https://travis-ci.org/jonatasleon/jonatasleon.github.io)
