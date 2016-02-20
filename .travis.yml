@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '0.10'
+branches:
+    only:
+    - dev
+before_script:
+- npm install -g gulp
+- npm install -g bower
+- npm install
+- bower install
+script: bash ./deploy.sh
+env:
+    global:
+    - GH_REF: github.com/jonatasleon/jonatasleon.github.io.git
+    - secure: GaXZ0ImzSWSxiOI14R1Lklg49AGHovbk+7p46KUD2g+muV3TTn8UEmOoMb6Sz3lxFigo6absgaVKFdtIsVGNfjN9RGPNmE7WVWaUoI0vSdoVfCsoVFTu2sLTzWgT92OCxwML6NF7iPprYXWP7Z6JqBJ+dOKSfMeogZ/2UWnHben7GPuMdS9n+mznlKHelpH61INkzN6Mm6EJs6VsmkORdaC+f8DeivFm9aIXrDLsik2Y49JM3SMSq7k/Zow2rC7q3l636g659mQQM6UyfqrbLyhcGYf2Ckvrr5hnVxERZ+IvCFL19quYAyX9HkV7Qpty2q9Avm/u6OZKqMI6b/YTdPjo425z0yE1h1XLMNX0WU1saTMRdB3N7VUE6pQSjpMqRjVgwOper0NSWEkTf+LIXIBXin/V/6/TSn48ucpjT7nMZ7pjUc+NvL5nwz7ymifN+ZwU/T3CKs1kBbLjqVpV+4ghkF2Vk7ByPIm6zwSJpyOsBSThE4JherN+MmE0zqz7P720R1KtQ2roQslEY3yPk/UVSzSGhuzaWtZSVSqlm1KMsNqR5OnF8KGlcTR5uTMlztuN0zimsQJ6nj+HtkBGvx2HSBG2jlJtob7mr69cYe13bBuFTL8qPX1kmGfAEwUHkmINObpjYBqRB8I0gescbsyWWjdBiKFTu4Fw3e09QEo=
