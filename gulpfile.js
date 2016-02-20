@@ -66,6 +66,7 @@ gulp.task("html-replace", function() {
 
 gulp.task("move-files", function() {
     var filesToMove = [
+        ".travis.yml",
         "./CNAME",
         "./README.md",
         "./view/**/*.html",
