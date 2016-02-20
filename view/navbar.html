@@ -1,7 +1,5 @@
-<nav class="navbar">
+<nav class="navbar" ng-controller="NavbarCtrl">
     <ul>
-        <li><a href="#/">Homepage</a></li>
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/contact">Contact</a></li>
+        <li ng-repeat="route in routes" ng-class="{active: isActive(route.path)}"><a href="{{route.path}}">{{route.name}}</a></li>
     </ul>
 </nav>

@@ -111,6 +111,9 @@ p.inverted {
     text-decoration: none;
     outline: 0;
 }
+.navbar ul li.active {
+    background-color: #130A59;
+}
 .navbar ul li a:hover {
     background-color: #0A123D;
 }
