@@ -69,8 +69,7 @@ gulp.task("move-files", function() {
         "./CNAME",
         "./README.md",
         "./view/**/*.html",
-        "./img/dest/**/*.{png,jpg}",
-        "./lib/**/*.map"
+        "./img/dest/**/*.{png,jpg}"
     ];
     return gulp.src(filesToMove, {
             base: "./"
