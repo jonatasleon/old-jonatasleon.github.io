@@ -1,8 +1,8 @@
 angular.module("myApp", ["firebase", "ngRoute", "ngAnimate"]);
 
-angular.module("myApp").config(function ($routeProvider) {
+angular.module("myApp").config(function ($routeProvider, routes) {
     $routeProvider
-        .when("/about", {
+        .when(routes.about.path, {
             templateUrl: "./view/about.html",
             controller: "AboutCtrl",
             resolve: {
@@ -11,7 +11,16 @@ angular.module("myApp").config(function ($routeProvider) {
                 }
             }
         })
+        .when(routes.contact.path, {
+            templateUrl: "./view/contact.html",
+            controller: "ContactCtrl",
+            resolve: {
+                addMessage: function (firebaseRef) {
+                        return firebaseRef.addMessage;
+                }
+            }
+        })
         .otherwise({
-            redirectTo: "/about"
+            redirectTo: routes.about.path
         });
 });

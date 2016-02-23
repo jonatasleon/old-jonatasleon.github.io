@@ -6,8 +6,8 @@ angular.module("myApp").factory("firebaseRef", ["config", "$firebaseObject", "$f
             return _resolveRefObject(_ref, config.aboutChild);
         }
 
-        function _messages() {
-            return _resolveRefArray(_ref, config.messagesChild);
+        function _addMessage(message) {
+            return _resolveRefArray(_ref, config.messagesChild).$add(message);
         }
 
         function _resolveRefObject(parentRef, childName) {
@@ -24,7 +24,7 @@ angular.module("myApp").factory("firebaseRef", ["config", "$firebaseObject", "$f
 
         return {
             getAbout: _about,
-            getMessages: _messages
+            addMessage: _addMessage
         };
     }
 ]);
