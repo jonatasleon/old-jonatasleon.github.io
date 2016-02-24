@@ -1,5 +1,5 @@
 html body {
-    font: 100% Helvetica, sans-serif;
+    font: 100% 'Ubuntu', Helvetica, sans-serif;
     background-color: #E0E0E0;
     color: #212121;
 }
@@ -54,7 +54,7 @@ p.inverted {
     color: #FFFFFF;
 }
 .container-box {
-    min-height: 50vh;
+    min-height: 50px;
     background-image: url("../img/dest/background.jpg");
     background-size: cover;
     background-attachment: fixed;
