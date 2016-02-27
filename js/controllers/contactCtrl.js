@@ -1,16 +1,29 @@
 angular.module("myApp").controller("ContactCtrl", ["$scope", "addMessage",
     function ($scope, addMessage) {
-        var fakeMessage = {author: "Jonatas", content: "test", dateTime: "2016-02-02T10:12:28-02:00", email: "", subject: ""};
+        function init() {
+            var fakeMessage = messageFactory("Jonatas", "", "", "");
+            addMessage(fakeMessage).then(success, error);
+        }
 
-        function onSuccess(ref) {
+        function messageFactory(author, email, subject, content) {
+            return {
+                author: author,
+                email: email,
+                subject: subject,
+                content: content,
+                dateTime: new Date()
+            };
+        }
+
+        function success(ref) {
             var id = ref.key();
             console.log(id);
         }
 
-        function onError() {
-            console.log("LASCOU-SE");
+        function error(err) {
+            console.log(err);
         }
 
-        addMessage(fakeMessage).then(onSuccess, onError);
+        init();
     }
 ]);
