@@ -3,10 +3,6 @@ angular.module("myApp").constant("routes", {
         name: "Homepage",
         path: "/"
     },
-    about: {
-        name: "About",
-        path: "/about"
-    },
     contact: {
         name: "Contact",
         path: "/contact"
