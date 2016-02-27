@@ -62,36 +62,36 @@ p.inverted {
     background-blend-mode: multiply;
 }
 .container-box .box {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .container-box .box figure img {
     display: block;
-    width: 150px;
+    width: 135px;
     margin: 0 auto;
     border-radius: 75px;
 }
 .container-box .box figure figcaption h1 {
     font-family: "Nothing You Could Do", cursive;
     text-align: center;
-    font-size: 6em;
+    font-size: 2.6em;
+    line-height: 90%;
 }
 .container-box .box h2 {
     text-align: center;
 }
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 789px) {
     .container-box .box {
-        background-color: transparent;
-        width: 100vw;
-        margin-top: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
     }
-    .container-box .box img {
-        width: 135px;
+    .container-box .box figure img {
+        width: 150px;
     }
     .container-box .box figure figcaption h1 {
-        font-size: 4.5em;
-        line-height: 90%;
+        font-size: 6em;
     }
 }
 .navbar ul {
@@ -133,7 +133,7 @@ article #main {
     transition: box-shadow 0.2s linear, transform 0.2s linear;
 }
 .elevation:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     box-shadow: 0 0 4px 2px #363636;
     transition: all 0.4s ease;
 }
