@@ -3,30 +3,19 @@ html body {
     background-color: #E0E0E0;
     color: #212121;
 }
-.container {
-    box-shadow: 0 -5px 10px 5px #141414;
-    margin-right: auto;
-    margin-left: auto;
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+.container-fluid:before,
+.container-fluid:after {
+    display: table;
+    content: " ";
 }
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .container {
-        width: 300px;
-    }
+.container-fluid:after {
+    clear: both;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
@@ -62,7 +51,7 @@ p.inverted {
     background-blend-mode: multiply;
 }
 .container-box .box {
-    width: 100vw;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -85,7 +74,7 @@ p.inverted {
     .container-box .box {
         margin-top: 20px;
         margin-bottom: 20px;
-        width: 100%;
+        /*width: 100%;*/
     }
     .container-box .box figure img {
         width: 150px;
