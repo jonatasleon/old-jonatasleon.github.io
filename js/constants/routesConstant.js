@@ -1,6 +1,6 @@
 angular.module("myApp").constant("routes", {
     homepage: {
-        name: "Homepage",
+        name: "Home",
         path: "/"
     },
     contact: {
