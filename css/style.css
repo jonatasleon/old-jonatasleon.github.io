@@ -47,9 +47,9 @@ p.inverted {
     background-attachment: fixed;
     background-color: rgba(48, 63, 159, 0.85);
     background-blend-mode: multiply;
+    width: 100%;
 }
 .container-box .box {
-    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -91,7 +91,7 @@ p.inverted {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #233187;
+    background-color: #303F9F;
 }
 .navbar ul li {
     float: left;
@@ -105,10 +105,10 @@ p.inverted {
     outline: 0;
 }
 .navbar ul li.active {
-    background-color: #130A59;
+    background-color: #190C82;
 }
 .navbar ul li a:hover {
-    background-color: #0A123D;
+    background-color: #0D195B;
 }
 .navbar .push-right {
     float: right;
@@ -129,5 +129,17 @@ article {
 hr {
     border: 0px;
     height: 1px;
+}
+hr.black {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+hr.white {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+.text {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.text p {
+    text-align: center;
 }
