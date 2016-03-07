@@ -8,7 +8,7 @@
                         <h1>{{info.name}}</h1>
                     </figcaption>
                 </figure>
-                <hr class="white">
+                <hr class="light">
                 <h2>{{info.job}}</h2>
             </div>
         </div>
@@ -16,11 +16,11 @@
 </header>
 
 <article >
-    <div class="row center-md">
-        <div class="col-md-6">
+    <div class="row center-md" ng-show="info.brief">
+        <div class="col-md-5">
             <div class="box text">
-                <h1>Um breve resumo</h1>
-                <hr class="black">
+                <h2>Um breve resumo</h2>
+                <hr class="dark">
                 <p>{{info.brief}}</p>
             </div>
         </div>
