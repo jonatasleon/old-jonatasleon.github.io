@@ -7,3 +7,4 @@ Jonatas Website
 
 - [ ] Improve Homepage
 - [ ] Create Contact page
+- [ ] Load indicator
