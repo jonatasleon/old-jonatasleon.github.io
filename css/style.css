@@ -37,9 +37,6 @@ h5 {
 h6 {
     font-size: 0.95em;
 }
-p.inverted {
-    color: #FFFFFF;
-}
 .container-box {
     min-height: 50px;
     background-image: url("../img/dest/background.jpg");

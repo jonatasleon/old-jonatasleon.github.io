@@ -1,0 +1,45 @@
+.loading {
+    width: 120px;
+    min-width: 120px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: rgba(149, 149, 149, .05);
+    position: relative;
+    margin: 30px auto;
+}
+.load-ball {
+    height: 20px;
+    width: 20px;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: rgba(50,88,203,.66);
+    position: absolute;
+    bottom: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(65,65,65,.53);
+    animation: up .9s linear infinite;
+    transition: scale 2s;
+}
+.load-ball:nth-child(1) {
+    left: 20px;
+    animation-delay: .1s;
+}
+.load-ball:nth-child(2) {
+    left: 50px;
+    animation-delay: .3s;
+}
+.load-ball:nth-child(3) {
+    right: 20px;
+    animation-delay: .5s;
+}
+.load-ball:hover {
+    transform: scale(2);
+}
+@keyframes up {
+    25% {
+        bottom: 30px;
+        transform: scale(.95);
+    }
+    to {
+        bottom: 15px;
+    }
+}
