@@ -21,7 +21,7 @@ angular.module("myApp").controller("ContactCtrl", ["$scope", "addMessage",
         }
 
         function error(err) {
-            console.log(err);
+            console.error(err);
         }
 
         init();
