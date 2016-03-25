@@ -47,7 +47,7 @@ gulp.task('eslint', function() {
 });
 
 gulp.task('image-min', function() {
-    return gulp.src('./img/src/**/*')
+    return gulp.src('./assets/img/src/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{
@@ -55,7 +55,7 @@ gulp.task('image-min', function() {
             }],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('./img/dest/'));
+        .pipe(gulp.dest('./assets/img/dest/'));
 });
 
 gulp.task('concat-files', function() {
