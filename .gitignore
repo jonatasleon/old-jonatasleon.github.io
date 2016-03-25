@@ -1,4 +1,4 @@
-img/dest/
+assets/img/dest/
 build/
-lib/
+assets/lib/
 node_modules/
