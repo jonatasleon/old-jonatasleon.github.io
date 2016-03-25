@@ -3,7 +3,7 @@ angular.module("myApp", ["firebase", "ngRoute", "ngAnimate"]);
 angular.module("myApp").config(function ($routeProvider, routes) {
     $routeProvider
         .when(routes.homepage.path, {
-            templateUrl: "./view/homepage.html",
+            templateUrl: "./partials/homepage.html",
             controller: "HomepageCtrl",
             resolve: {
                 info: function (firebaseRef) {
@@ -12,7 +12,7 @@ angular.module("myApp").config(function ($routeProvider, routes) {
             }
         })
         .when(routes.contact.path, {
-            templateUrl: "./view/contact.html",
+            templateUrl: "./partials/contact.html",
             controller: "ContactCtrl",
             resolve: {
                 addMessage: function (firebaseRef) {

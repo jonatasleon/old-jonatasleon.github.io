@@ -73,12 +73,12 @@ gulp.task('css-min', function() {
 });
 
 gulp.task('html-min', function() {
-    return gulp.src('./view/**/*.html')
+    return gulp.src('./partials/**/*.html')
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('./build/view/'));
+        .pipe(gulp.dest('./build/partials/'));
 });
 
 gulp.task('copy-files', function() {
