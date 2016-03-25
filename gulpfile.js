@@ -86,7 +86,7 @@ gulp.task('copy-files', function() {
         '.travis.yml',
         './CNAME',
         './README.md',
-        './img/dest/**/*.{png,jpg}'
+        './assets/img/dest/**/*.{png,jpg}'
     ];
     return gulp.src(filesToMove, {
             base: './'
