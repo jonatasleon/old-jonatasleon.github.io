@@ -10,6 +10,7 @@
         <!-- build:css css/myappstyle.css -->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./lib/flexboxgrid/dist/flexboxgrid.css">
+        <link rel="stylesheet" href="./css/footer-on-bottom.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/ngstyle.css">
         <link rel="stylesheet" href="./css/loading.css">
@@ -32,21 +33,21 @@
     </head>
 
     <body>
-        <ng-include src="'./view/navbar.html'"></ng-include>
-        <div class="container-fluid">
+        <div id="wrapper">
+            <ng-include src="'./view/navbar.html'"></ng-include>
             <ng-view></ng-view>
-            <footer>
+        </div>
+        <footer>
+            <div class="container-fluid">
                 <div class="row center-xs">
                     <div class="col-xs-6">
-                        <div class="box text">
-                            <hr class="dark">
+                        <div class="box">
                             <h1>Under development</h1>
-                            <hr class="dark" style="margin-bottom: 75px">
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 
 </html>

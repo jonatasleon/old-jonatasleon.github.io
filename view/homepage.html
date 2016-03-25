@@ -1,35 +1,37 @@
-<header class="container-box">
-    <div class="row middle-md center-md">
-        <div class="col-xs-12 col-sm-10 col-md-8">
-            <div class="box fade" ng-show="isLoaded">
-                <figure>
-                    <img class="elevation" ng-src="{{info.image.path}}" alt="{{info.image.description}}" title="{{info.image.description}}">
-                    <figcaption>
-                        <h1>{{info.name}}</h1>
-                    </figcaption>
-                </figure>
-                <hr class="light">
-                <h2>{{info.job}}</h2>
+<div class="container-fluid">
+    <header class="container-box">
+        <div class="row middle-md center-md">
+            <div class="col-xs-12 col-sm-10 col-md-8">
+                <div class="box fade" ng-show="isLoaded">
+                    <figure>
+                        <img class="elevation" ng-src="{{info.image.path}}" alt="{{info.image.description}}" title="{{info.image.description}}">
+                        <figcaption>
+                            <h1>{{info.name}}</h1>
+                        </figcaption>
+                    </figure>
+                    <hr class="light">
+                    <h2>{{info.job}}</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div ng-show="!isLoaded" class="row center-xs">
-        <div class="loading col-xs-1">
-            <div class="load-ball"></div>
-            <div class="load-ball"></div>
-            <div class="load-ball"></div>
+        <div ng-show="!isLoaded" class="row center-xs">
+            <div class="loading col-xs-1">
+                <div class="load-ball"></div>
+                <div class="load-ball"></div>
+                <div class="load-ball"></div>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<article >
-    <div class="row center-md" ng-show="isLoaded">
-        <div class="col-md-5">
-            <div class="box text">
-                <h2 class="center">Brief History</h2>
-                <hr class="dark">
-                <p>{{info.brief}}</p>
+    <article >
+        <div class="row center-md" ng-show="isLoaded">
+            <div class="col-md-5">
+                <div class="box text">
+                    <h2 class="center">Brief History</h2>
+                    <hr class="dark">
+                    <p>{{info.brief}}</p>
+                </div>
             </div>
         </div>
-    </div>
-</article>
+    </article>
+</div>

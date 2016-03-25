@@ -136,9 +136,13 @@ hr.dark {
 hr.light {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
 }
+footer {
+    background-color: #303F9F;
+    color: #FEFEFE;
+}
 .text {
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 .text h1, .text h2, .text p {
     text-align: center;

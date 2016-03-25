@@ -1,0 +1,23 @@
+html, body, #wrapper {
+    height: 100%;
+}
+body > #wrapper {
+    height: auto;
+    min-height: 100%;
+}
+article {
+    padding-bottom: 80px; /* define o tamanho do footer */
+}
+footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+
+    /* height deve ter o mesmo valor de
+       padding-bottom em article */
+    height: 80px;
+
+    /* margin-top deve ter o valor negativo do que foi
+       definido em padding-bottom no article */
+    margin-top: -80px;
+}
