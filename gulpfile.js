@@ -61,9 +61,9 @@ gulp.task('image-min', function() {
 gulp.task('concat-files', function() {
     return gulp.src('./index.html')
         .pipe(useref())
-        .pipe(gulpif('*.css', concatCss('css/styles.css')))
-        .pipe(gulpif('*.js', concat('js/scripts.js')))
-        .pipe(gulp.dest('build/assets/'));
+        .pipe(gulpif('*.css', concatCss('assets/css/styles.css')))
+        .pipe(gulpif('*.js', concat('assets/js/scripts.js')))
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('css-min', function() {
