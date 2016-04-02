@@ -11,15 +11,15 @@ angular.module("myApp").config(function ($routeProvider, routes) {
                 }
             }
         })
-        .when(routes.contact.path, {
-            templateUrl: "./partials/contact.html",
-            controller: "ContactCtrl",
-            resolve: {
-                addMessage: function (firebaseRef) {
-                        return firebaseRef.addMessage;
-                }
-            }
-        })
+        // .when(routes.contact.path, {
+        //     templateUrl: "./partials/contact.html",
+        //     controller: "ContactCtrl",
+        //     resolve: {
+        //         addMessage: function (firebaseRef) {
+        //                 return firebaseRef.addMessage;
+        //         }
+        //     }
+        // })
         .otherwise({
             redirectTo: routes.homepage.path
         });
