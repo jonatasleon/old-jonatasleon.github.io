@@ -41,10 +41,14 @@ h6 {
     min-height: 50px;
     background-image: url("../img/dest/background.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-color: rgba(48, 63, 159, 0.85);
     background-blend-mode: multiply;
     width: 100%;
+}
+@media screen and (min-width: 789px) {
+    .header {
+        background-attachment: fixed;
+    }
 }
 .header .box {
     margin-top: 10px;
@@ -74,7 +78,6 @@ h6 {
     .header .box {
         margin-top: 20px;
         margin-bottom: 20px;
-        /*width: 100%;*/
     }
     .header .box figure img {
         width: 150px;
@@ -148,6 +151,6 @@ footer {
     color: #FEFEFE;
 }
 footer .content {
-    position: relative;;
+    position: relative;
     top: 32px;
 }
