@@ -13,6 +13,13 @@
                 </div>
             </div>
         </div>
+        <div class="row center-md">
+            <div class="col-xs-12 col-md-3 icons">
+                <div class="box fade" ng-show="isLoaded">
+                    <a ng-repeat="socialMedia in info.socialMedias" target="_blank" href="{{socialMedia.url}}"><i class="mdi mdi-48px mdi-light" ng-class="socialMedia.cssClass"></i></a>
+                </div>
+            </div>
+        </div>
         <div ng-show="!isLoaded" class="row center-xs">
             <div class="loading col-xs-1">
                 <div class="load-ball"></div>

@@ -21,7 +21,8 @@ gulp.task('make-build', function() {
         'concat-files',
         'css-min',
         'html-min',
-        'copy-files'
+        'copy-files',
+        'copy-fonts'
     );
 });
 
@@ -92,4 +93,9 @@ gulp.task('copy-files', function() {
             base: './'
         })
         .pipe(gulp.dest('build'));
+});
+
+gulp.task('copy-fonts', function() {
+    return gulp.src('./assets/lib/mdi/fonts/*')
+        .pipe(gulp.dest('./build/assets/fonts/'));
 });
