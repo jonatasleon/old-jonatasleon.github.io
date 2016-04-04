@@ -8,3 +8,4 @@ Jonatas Website
 - [ ] Improve Homepage
 - [ ] Create Contact page
 - [x] Load indicator
+- [ ] Fix loading indicator on large screens
