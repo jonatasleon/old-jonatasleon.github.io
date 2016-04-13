@@ -9,3 +9,4 @@ Jonatas Website
 - [ ] Create Contact page
 - [x] Load indicator
 - [x] Fix loading indicator on large screens
+- [ ] Create blog section
