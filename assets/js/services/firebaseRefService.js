@@ -3,23 +3,19 @@ angular.module("myApp").factory("firebaseRef", ["config", "$firebaseObject", "$f
         var _ref = new Firebase(config.baseURL);
 
         function _about() {
-            return _resolveRefObject(_ref, config.aboutChild);
+            return _getObject(_ref, config.aboutChild);
         }
 
         function _addMessage(message) {
-            return _resolveRefArray(_ref, config.messagesChild).$add(message);
+            return _getArray(_ref, config.messagesChild).$add(message);
         }
 
-        function _resolveRefObject(parentRef, childName) {
-            return _resolveRef(parentRef, childName, $firebaseObject);
+        function _getObject(parentRef, childName) {
+            return $firebaseObject(parentRef.child(childName));
         }
 
-        function _resolveRefArray(parentRef, childName) {
-            return _resolveRef(parentRef, childName, $firebaseArray);
-        }
-
-        function _resolveRef(parentRef, childName, callbackType) {
-            return callbackType(parentRef.child(childName));
+        function _getArray(parentRef, childName) {
+            return $firebaseArray(parentRef.chil(childName));
         }
 
         return {
