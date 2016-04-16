@@ -20,6 +20,17 @@ angular.module("myApp").config(function ($routeProvider, routes) {
         //         }
         //     }
         // })
+        .when(routes.blog.path, {
+            templateUrl: "./partials/blog.html",
+            controller: "BlogCtrl",
+            resolve: {
+                blog: function (firebaseRef) {
+                    var blog = firebaseRef.getBlog();
+                    blog.truco = "TRUCOOOOOOOOOOO!";
+                    return blog;
+                }
+            }
+        })
         .otherwise({
             redirectTo: routes.homepage.path
         });

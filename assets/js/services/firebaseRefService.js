@@ -10,6 +10,10 @@ angular.module("myApp").factory("firebaseRef", ["config", "$firebaseObject", "$f
             return _getArray(_ref, config.messagesChild).$add(message);
         }
 
+        function _blog() {
+            return _getObject(_ref, config.blogChild);
+        }
+
         function _getObject(parentRef, childName) {
             return $firebaseObject(parentRef.child(childName));
         }
@@ -20,6 +24,7 @@ angular.module("myApp").factory("firebaseRef", ["config", "$firebaseObject", "$f
 
         return {
             getAbout: _about,
+            getBlog: _blog,
             addMessage: _addMessage
         };
     }

@@ -6,5 +6,9 @@ angular.module("myApp").constant("routes", {
     // contact: {
     //     name: "Contact",
     //     path: "/contact"
+    },
+    blog: {
+        name: "Blog",
+        path: "/blog"
     }
 });
