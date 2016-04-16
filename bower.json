@@ -24,7 +24,8 @@
     "flexboxgrid": "6.3.0",
     "angular-animate": "1.5.0",
     "moment": "~2.11.2",
-    "mdi": "^1.5.54"
+    "mdi": "^1.5.54",
+    "angular-sanitize": "1.4.9"
   },
   "resolutions": {
     "angular": "1.4.9"

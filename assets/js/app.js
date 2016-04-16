@@ -1,4 +1,4 @@
-angular.module("myApp", ["firebase", "ngRoute", "ngAnimate"]);
+angular.module("myApp", ["firebase", "ngRoute", "ngAnimate", "ngSanitize"]);
 
 angular.module("myApp").config(function ($routeProvider, routes) {
     $routeProvider
