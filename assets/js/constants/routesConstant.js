@@ -1,7 +1,8 @@
 angular.module("myApp").constant("routes", {
     homepage: {
         name: "Home",
-        path: "/"
+        path: "/",
+        regex: "^/$"
     // },
     // contact: {
     //     name: "Contact",
@@ -9,6 +10,7 @@ angular.module("myApp").constant("routes", {
     },
     blog: {
         name: "Blog",
-        path: "/blog"
+        path: "/blog",
+        regex: "^/blog"
     }
 });
