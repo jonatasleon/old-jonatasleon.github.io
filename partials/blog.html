@@ -1,13 +1,19 @@
-<div class="row center-md">
+<article class="row center-md" class="blog">
     <div class="col-xs-12 col-md-6">
-        <div class="box">
-            <div ng-repeat="post in posts">
-                <h2>{{post.title}}</h2>
-                <p>{{post.createdOn | date}}</p>
-                <p ng-bind-html="post.body"></p>
-                <p>{{post.author}}</p>
+        <div class="box blog">
+            <section ng-repeat="post in posts" class="post">
+                <div class="title">
+                    <a href="#/blog/{{post.texts}}">
+                        <p>{{post.title}}</p>
+                    </a>
+                </div>
+                <p class="subtitle">{{post.subtitle}}</p>
+                <p class="author">
+                    {{post.author}}
+                    <span class="date">{{post.createdOn | date}}</span>
+                </p>
                 <img ng-src="{{post.image}}" alt="">
-            </div>
+            </section>
         </div>
     </div>
-</div>
+</article>
