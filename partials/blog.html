@@ -1,20 +1,22 @@
-<article class="row center-md" class="blog">
+<article class="blog">
     <div class="container-fluid">
-        <div class="col-xs-12 col-md-6">
-            <div class="box blog">
-                <section ng-repeat="post in posts" class="post">
-                    <div class="title">
-                        <a href="#/blog/{{post.texts}}">
-                            <p>{{post.title}}</p>
-                        </a>
-                    </div>
-                    <p class="subtitle">{{post.subtitle}}</p>
-                    <p class="author">
-                        {{post.author}}
-                        <span class="date">{{post.createdOn | date}}</span>
-                    </p>
-                    <img ng-src="{{post.image}}" alt="">
-                </section>
+        <div class="row center-md">
+            <div class="col-xs-12 col-md-6">
+                <div class="box blog">
+                    <section ng-repeat="post in posts" class="post">
+                        <div class="title">
+                            <a href="#/blog/{{post.texts}}">
+                                <p>{{post.title}}</p>
+                            </a>
+                        </div>
+                        <p class="subtitle">{{post.subtitle}}</p>
+                        <p class="author">
+                            {{post.author}}
+                            <span class="date">{{post.createdOn | date}}</span>
+                        </p>
+                        <img ng-src="{{post.image}}" alt="">
+                    </section>
+                </div>
             </div>
         </div>
     </div>
