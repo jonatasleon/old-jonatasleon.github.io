@@ -1,4 +1,4 @@
-angular.module("myApp").controller("BlogCtrl", ["$scope", "blog",
+angular.module("myApp").controller("BlogController", ["$scope", "blog",
     function($scope, blog) {
         $scope.posts = [];
 

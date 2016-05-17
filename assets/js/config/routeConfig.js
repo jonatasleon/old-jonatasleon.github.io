@@ -3,7 +3,7 @@ angular.module("myApp").config(["$routeProvider", "routes",
         $routeProvider
             .when(routes.homepage.path, {
                 templateUrl: "./partials/homepage.html",
-                controller: "HomepageCtrl",
+                controller: "HomepageController",
                 resolve: {
                     info: function(firebaseRef) {
                         return firebaseRef.getAbout();
@@ -12,7 +12,7 @@ angular.module("myApp").config(["$routeProvider", "routes",
             })
             // .when(routes.contact.path, {
             //     templateUrl: "./partials/contact.html",
-            //     controller: "ContactCtrl",
+            //     controller: "ContactController",
             //     resolve: {
             //         addMessage: function (firebaseRef) {
             //                 return firebaseRef.addMessage;
@@ -21,7 +21,7 @@ angular.module("myApp").config(["$routeProvider", "routes",
             // })
             .when(routes.blog.path, {
                 templateUrl: "./partials/blog.html",
-                controller: "BlogCtrl",
+                controller: "BlogController",
                 resolve: {
                     blog: function(firebaseRef) {
                         return firebaseRef.getBlog();
@@ -30,7 +30,7 @@ angular.module("myApp").config(["$routeProvider", "routes",
             })
             .when(routes.blog.path + "/:id", {
                 templateUrl: "./partials/post.html",
-                controller: "PostCtrl",
+                controller: "PostController",
                 css: "<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic,700italic' rel='stylesheet' type='text/css'>",
                 resolve: {
                     post: function(firebaseRef, $route) {

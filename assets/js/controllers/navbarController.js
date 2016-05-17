@@ -1,4 +1,4 @@
-angular.module("myApp").controller("NavbarCtrl", ["$scope", "$location", "routes",
+angular.module("myApp").controller("NavbarController", ["$scope", "$location", "routes",
     function ($scope, $location, routes) {
         var count = 0;
         $scope.routes = routes;

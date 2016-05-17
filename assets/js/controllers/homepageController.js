@@ -1,4 +1,4 @@
-angular.module("myApp").controller("HomepageCtrl", ["$scope", "info",
+angular.module("myApp").controller("HomepageController", ["$scope", "info",
     function ($scope, info) {
         $scope.info = info;
         $scope.info.$loaded().then(function () {

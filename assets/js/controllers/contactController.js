@@ -1,4 +1,4 @@
-angular.module("myApp").controller("ContactCtrl", ["$scope", "addMessage",
+angular.module("myApp").controller("ContactController", ["$scope", "addMessage",
     function ($scope, addMessage) {
         function init() {
             var fakeMessage = messageFactory("Jonatas", "", "", "");
