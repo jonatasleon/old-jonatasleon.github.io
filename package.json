@@ -27,6 +27,8 @@
     "gulp-imagemin": "~2.4.0",
     "gulp-useref": "^3.0.6",
     "imagemin-pngquant": "~4.2.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "favicons": "^4.7.1",
+    "gulp-favicons": "^2.2.6"
   }
 }
