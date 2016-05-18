@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     concatCss = require('gulp-concat-css'),
     cssmin = require('gulp-csso'),
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
+    favicons = require("gulp-favicons");
 
 gulp.task('default', ['make-build']);
 
@@ -96,4 +97,26 @@ gulp.task('copy-files', function() {
 gulp.task('copy-fonts', function() {
     return gulp.src('./assets/lib/mdi/fonts/*')
         .pipe(gulp.dest('./build/assets/fonts/'));
+});
+
+gulp.task('favicon', function () {
+    return gulp.src('./assets/img/dest/logo.png')
+        .pipe(favicons({
+            appName: 'Personal Website',
+            appDescription: 'This is my website',
+            developerName: 'Jonatas Leon',
+            developerURL: 'http://jonatasleon.com/',
+            background: '#183D9C',
+            path: 'favicons/',
+            url: 'http://jonatasleon.com/',
+            display: 'standalone',
+            orientation: 'portrait',
+            version: 1.0,
+            logging: false,
+            online: true,
+            html: 'index.html',
+            pipeHTML: true,
+            replace: true
+        }))
+        .pipe(gulp.dest('./'));
 });
