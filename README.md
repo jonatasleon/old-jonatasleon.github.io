@@ -3,6 +3,8 @@ Jonatas Website
 
 [![Build Status](https://travis-ci.org/jonatasleon/jonatasleon.github.io.svg?branch=dev)](https://travis-ci.org/jonatasleon/jonatasleon.github.io)
 
+![Screenshot](./screenshot.png)
+
 ## ToDo List
 
 - [ ] Improve Homepage
