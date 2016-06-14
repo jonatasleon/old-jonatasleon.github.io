@@ -19,32 +19,6 @@ angular.module("myApp").config(["$routeProvider", "routes",
             //         }
             //     }
             // })
-            .when(routes.blog.path, {
-                templateUrl: "./partials/blog.html",
-                controller: "BlogController",
-                resolve: {
-                    blog: function(firebaseRef) {
-                        return firebaseRef.getBlog();
-                    }
-                }
-            })
-            .when(routes.blog.path + "/:id", {
-                templateUrl: "./partials/post.html",
-                controller: "PostController",
-                css: "<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic,700italic' rel='stylesheet' type='text/css'>",
-                resolve: {
-                    post: function(firebaseRef, $route) {
-                        var post = firebaseRef.getPost($route.current.params.id);
-                        post.$loaded().then(function() {
-                            var text = firebaseRef.getText(this.texts);
-                            text.$loaded().then(function() {
-                                this.text = text.$value;
-                            }.bind(this));
-                        }.bind(post));
-                        return post;
-                    }
-                }
-            })
             .otherwise({
                 redirectTo: routes.homepage.path
             });
