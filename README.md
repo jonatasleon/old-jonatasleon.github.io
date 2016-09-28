@@ -11,3 +11,4 @@ Jonatas Website [![Build Status](https://travis-ci.org/jonatasleon/jonatasleon.g
 - [x] Fix loading indicator on large screens
 - [ ] Add section to useful links
 - [ ] Update Info
+- [ ] Update to Angular 2
