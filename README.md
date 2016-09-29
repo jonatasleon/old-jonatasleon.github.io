@@ -9,6 +9,7 @@ Jonatas Website [![Build Status](https://travis-ci.org/jonatasleon/jonatasleon.g
 - [ ] Create Contact page
 - [x] Load indicator
 - [x] Fix loading indicator on large screens
-- [ ] Add section to useful links
-- [ ] Update Info
+- [X] Add section to useful links (Projects and Contributions)
+- [X] Update Info
 - [ ] Update to Angular 2
+- [ ] Translate to english
