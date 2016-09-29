@@ -154,3 +154,14 @@ footer .content {
     position: relative;
     top: 32px;
 }
+.project-item {
+  margin: 25px auto 10px;
+}
+.project-item p {
+  font-size: 1em;
+  margin: 0 auto 18px;
+  text-align: left;
+}
+.project-item img {
+  width: 100%;
+}
