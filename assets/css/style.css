@@ -213,6 +213,10 @@ footer .content {
     width: 50%;
 }
 
+.project-item img.large {
+    width: 80%;
+}
+
 @media screen and (min-width: 789px) {
     .project-item img {
         opacity: 0.6;
