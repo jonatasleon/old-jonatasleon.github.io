@@ -16,7 +16,9 @@
         <div class="row center-xs center-md">
             <div class="col-xs-12 col-md-3 icons">
                 <div class="box fade" ng-show="isLoaded">
-                    <a ng-repeat="socialMedia in info.socialMedias" target="_blank" href="{{socialMedia.url}}"><i class="mdi mdi-48px mdi-light" ng-class="socialMedia.cssClass"></i></a>
+                    <a ng-repeat="socialMedia in info.socialMedias" target="_blank" href="{{socialMedia.url}}">
+                        <i class="mdi mdi-48px mdi-light" ng-class="socialMedia.cssClass"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -49,29 +51,39 @@
             </div>
         </div>
         <div class="row center-md">
-          <div class="col-md-12">
-            <h2 class="title">Projetos e Contribuições</h2>
-            <hr class="dark">
-            <div class="row center-md">
-              <div class="col-md-4 project-item">
-                <h3 class="title">Apostila Android</h3>
-                <p>Apostila open-source sobre desenvolvimento para Android. Utilizada como base em um mini-curso na Semana de Tecnologia da FATEC Guaratinguetá, ao longo do conteúdo são utilizados desde conceitos básicos até utilização de bibliotecas, como a Retrofit2 e Picasso. Clique na imagem a baixo e divirta-se :D</p>
-                <a target="_blank" href="https://github.com/jonatasleon/poke-list">
-                  <img src="../assets/img/dest/apostila-screenshot.png" alt="Screenshot da apostila">
-                </a>
-              </div>
-              <div class="col-md-4 project-item">
-                <h3 class="title">AppComércio</h3>
-                <p>Aplicativo desenvolvido em <a targe="_blank" href="https://www.b4x.com/b4a.html">B4A</a> com a finalidade de promover o comércio local. Uma experiência que trouxe muito conhecimento. Clique na imagem para saber mais sobre o projeto.</p>
-                  <a target="_blank" href="https://sameapk.com/app-comercio/"><img src="../assets/img/dest/appcomercio.png" alt="Logotipo do app"></a>
-              </div>
-              <div class="col-md-4 project-item">
-                <h3 class="title">Site Jonatas Leon</h3>
-                <p>Site pessoal desenvolvido para colocar em prática habilidades com HTML, Javascript e CSS. Foram utilizadas ferramentas com AngularJS, Firebase, Gulp e Travis. Você pode dar uma olhada no código fonte clicando na imagem.</p>
-                  <a target="_blank" href="https://github.com/jonatasleon/jonatasleon.github.io"><img src="../assets/img/dest/screenshot.png" alt="Screenshot do site" class="large"></a>
-              </div>
+            <div class="col-xs-12 col-md-12">
+                <div class="box">
+                    <div class="text">
+                        <h2 class="title">Projetos e Contribuições</h2>
+                        <hr class="dark">
+                    </div>
+                    <div class="row center-md">
+                        <div class="cols-xs-12
+col-xs-12 col-md-4 project-item">
+                            <h3 class="title">Apostila Android</h3>
+                            <p>Apostila open-source sobre desenvolvimento para Android. Utilizada como base em um mini-curso na Semana de Tecnologia da FATEC Guaratinguetá, ao longo do conteúdo são utilizados desde conceitos básicos até utilização de bibliotecas, como a
+                                Retrofit2 e Picasso. Clique na imagem a baixo e divirta-se :D</p>
+                            <a target="_blank" href="https://github.com/jonatasleon/poke-list">
+                                <img src="../assets/img/dest/apostila-screenshot.png" alt="Screenshot da apostila">
+                            </a>
+                        </div>
+                        <div class="cols-xs-12
+col-xs-12 col-md-4 project-item">
+                            <h3 class="title">AppComércio</h3>
+                            <p>Aplicativo desenvolvido em
+                                <a targe="_blank" href="https://www.b4x.com/b4a.html">B4A</a>
+                                com a finalidade de promover o comércio local. Uma experiência que trouxe muito conhecimento. Clique na imagem para saber mais sobre o projeto.</p>
+                            <a target="_blank" href="https://sameapk.com/app-comercio/"><img src="../assets/img/dest/appcomercio.png" alt="Logotipo do app"></a>
+                        </div>
+                        <div class="cols-xs-12
+col-xs-12 col-md-4 project-item">
+                            <h3 class="title">Site Jonatas Leon</h3>
+                            <p>Site pessoal desenvolvido para colocar em prática habilidades com HTML, Javascript e CSS. Foram utilizadas ferramentas com AngularJS, Firebase, Gulp e Travis. Você pode dar uma olhada no código fonte clicando na imagem.</p>
+                            <a target="_blank" href="https://github.com/jonatasleon/jonatasleon.github.io"><img src="../assets/img/dest/screenshot.png" alt="Screenshot do site" class="large"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 </article>
