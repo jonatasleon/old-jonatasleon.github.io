@@ -1,15 +1,15 @@
-var gulp = require('gulp'),
-    runSequence = require('run-sequence'),
-    eslint = require('gulp-eslint'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    useref = require('gulp-useref'),
-    gulpif = require('gulp-if'),
-    concat = require('gulp-concat'),
-    concatCss = require('gulp-concat-css'),
-    cssmin = require('gulp-csso'),
-    htmlmin = require('gulp-htmlmin'),
-    favicons = require("gulp-favicons");
+const gulp = require('gulp');
+const runSequence = require('run-sequence');
+const eslint = require('gulp-eslint');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
+const useref = require('gulp-useref');
+const gulpif = require('gulp-if');
+const concat = require('gulp-concat');
+const concatCss = require('gulp-concat-css');
+const cssmin = require('gulp-csso');
+const htmlmin = require('gulp-htmlmin');
+const favicons = require("gulp-favicons");
 
 gulp.task('default', ['make-build']);
 
