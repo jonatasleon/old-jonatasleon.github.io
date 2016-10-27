@@ -5,7 +5,7 @@ Jonatas Website [![Build Status](https://travis-ci.org/jonatasleon/jonatasleon.g
 
 ## ToDo List
 
-- [ ] Improve Homepage
+- [x] Improve Homepage
 - [ ] Create Contact page
 - [x] Load indicator
 - [x] Fix loading indicator on large screens
