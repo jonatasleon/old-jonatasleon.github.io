@@ -17,18 +17,19 @@
     "url": "https://github.com/jonatasleon/jonatasleon.github.io/issues"
   },
   "devDependencies": {
+    "favicons": "^4.7.1",
     "gulp": "~3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.2.0",
     "gulp-csso": "^1.1.0",
     "gulp-eslint": "^2.0.0",
+    "gulp-favicons": "^2.2.6",
     "gulp-htmlmin": "^1.3.0",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "~2.4.0",
     "gulp-useref": "^3.0.6",
     "imagemin-pngquant": "~4.2.0",
-    "run-sequence": "^1.1.5",
-    "favicons": "^4.7.1",
-    "gulp-favicons": "^2.2.6"
+    "live-server": "^1.2.0",
+    "run-sequence": "^1.1.5"
   }
 }
